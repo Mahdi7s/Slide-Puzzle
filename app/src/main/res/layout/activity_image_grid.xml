@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChunkedImageActivity"
+    android:background="@drawable/background_blue">
+
+        <RelativeLayout
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_ribbon_height"
+                android:src="@drawable/create_ribbon"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"/>
+
+            <LinearLayout
+                android:weightSum="3"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_button_height"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingRight="@dimen/margin_small"
+                android:paddingLeft="@dimen/margin_small">
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:id="@+id/btnSolvePuzzle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/create_btn_solve" />
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:id="@+id/btnSharePuzzle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/create_btn_share" />
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:id="@+id/btnRandomSlice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/create_btn_shuffle" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnRandomSlice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_random" />
+
+            <ImageButton
+                android:id="@+id/btnSharePuzzle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_share" />
+        </LinearLayout>-->
+
+    <com.chocolate.puzzlefriends.GameboardView
+        android:id="@+id/gameboard"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/background"></com.chocolate.puzzlefriends.GameboardView>
+</LinearLayout>

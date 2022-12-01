@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="bazaar_public_key">MIHNMA0GCSqGSIb3DQEBAQUAA4G7ADCBtwKBrwCcOenuDOAxCOQYhEGhpwpoMWAsdPROK5zO+c3biWLFOXjG439i5WvhtiMMvucvvViNP/1BUg09CmvS/gvwUp0NDDrc5Sx3kgVsM6LR4LFAHyv6hRP7TKaphfWfqa/+5BOIvXwMUknykeVMZQvSRvDh3hWos7+IIKrzY8E9oND98Ph3jDVzfHH6QIXu8eV85FzDiQbZn/AMiIovfiBbFF0rFfjG2rfMfIZWYWf1FJMCAwEAAQ==</string>
+
+    <string name="hello"></string>
+    <string name="app_name">بفرمایید جورچین</string>
+    <string name="button_text"></string>
+    <string name="action_settings"></string>
+
+    <!-- ************ Rate Dialog ************* -->
+    <string name="rate_dialog_title">ارزیابی برنامه</string>
+    <string name="rate_dialog_message">دوست عزیز، آیا میتونی چند لحظه از وقت گرانبهای خود را برای امتیاز دادن به برنامه صرف کنی؟</string>
+    <string name="rate_dialog_ok">باشه</string>
+    <string name="rate_dialog_cancel">بعدا</string>
+    <string name="rate_dialog_no">نوچ</string>
+
+
+    <string name="three">3*3</string>
+    <string name="four">4*4</string>
+    <string name="five">5*5</string>
+    <string name="title_activity_difficulty">Difficulty</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_solve_type">SolveType</string>
+    <string name="title_activity_gallery">Gallery</string>
+    <string name="new_game"></string>
+    <!-- Main menu item for launching about screen -->
+    <string name="about"></string>
+    <!-- First text in about screen -->
+    <string name="created_by"></string>
+    <!-- Second text in about screen -->
+    <string name="opensource_used"></string>
+    <!-- First opensource project in about screen -->
+    <string name="project1"></string>
+    <!-- Second opensource project in about screen -->
+    <string name="project2"></string>
+    <!-- Third text in about screen -->
+    <string name="check_out"></string>
+    <!-- Link to the app Settle Up in about screen -->
+    <string name="settle_up"></string>
+    <string name="title_activity_solve_puzzle">حل جورچین</string>
+    <string name="title_activity_intent_selection">Befarmaeid Joorchin</string>
+    <string name="title_activity_win">برد</string>
+    <string name="title_activity_help">آموزش</string>
+    <string name="title_activity_about">درباره ما</string>
+    <string name="title_activity_main_activity2">اصلی</string>
+    <string name="title_activity_win_board">برد</string>
+    <string name="title_activity_store">فروشگاه</string>
+
+    <string name="enc_key">chpassch2mahBad</string>
+</resources>

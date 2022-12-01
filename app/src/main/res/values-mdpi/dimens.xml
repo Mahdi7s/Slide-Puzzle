@@ -1,0 +1,13 @@
+<resources>
+
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_medium">10dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_xlarge">30dp</dimen>
+    <dimen name="margin_xxlarge">40dp</dimen>
+
+    <dimen name="logo_height">150dp</dimen>
+    <dimen name="menu_button_height">70dp</dimen>
+
+
+</resources>

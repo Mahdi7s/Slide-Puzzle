@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chocolate.puzzlefriends" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:manageSpaceActivity=".MainActivity"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChunkedImageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Difficulty"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_difficulty"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SolveType"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_solve_type"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Gallery"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_gallery"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SolvePuzzle"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_solve_puzzle"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".IntentSelection"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_intent_selection"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+            </intent-filter>
+            <!-- filter for sending text or images; accepts SEND action and text or image data -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+                <!-- <data android:mimeType="text/plain" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_help"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity" >
+        </activity>
+        <activity
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:name=".WinBoardActivity"
+            android:label="@string/title_activity_win_board" >
+        </activity>
+        <activity
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:name=".StoreActivity"
+            android:label="@string/title_activity_store" >
+        </activity>
+    </application>
+
+</manifest>

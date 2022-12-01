@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SolvePuzzle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_blue">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/solve_ribbon_height"
+        android:src="@drawable/solve_ribbon"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/solve_button_height"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_small">
+
+            <ImageView
+                android:id="@+id/time_box"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/solve_time_box" />
+
+            <ImageView
+                android:id="@+id/time_icon"
+                android:layout_alignLeft="@id/time_box"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/solve_time_icon" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_toRightOf="@id/time_icon"
+                android:gravity="center_vertical"
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="00:00"
+                android:textSize="@dimen/text_solve"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_small">
+
+            <ImageView
+                android:id="@+id/moves_box"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/solve_moves_box" />
+
+            <ImageView
+                android:id="@+id/moves_icon"
+                android:layout_alignLeft="@id/moves_box"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/solve_moves_icon" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_toRightOf="@id/moves_icon"
+                android:gravity="center_vertical"
+                android:id="@+id/txtMoves"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="@dimen/text_solve"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btnHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:tag="unchecked"
+            android:src="@drawable/btn_show"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.chocolate.puzzlefriends.GameboardView
+            android:id="@+id/gameboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"></com.chocolate.puzzlefriends.GameboardView>
+
+        <com.chocolate.puzzlefriends.GameboardViewMode2
+            android:id="@+id/gameboard2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"></com.chocolate.puzzlefriends.GameboardViewMode2>
+
+
+        <ImageView
+            android:id="@+id/imgHelp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/galleryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_button_height"
+            android:layout_marginBottom="@dimen/margin_medium">
+
+            <ImageButton
+                android:id="@+id/btnNewRandomImage"
+                android:src="@drawable/btn_change"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="left"/>
+
+            <ImageButton
+                android:id="@+id/btnOkImage"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_ok"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:layout_toRightOf="@id/btnNewRandomImage"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

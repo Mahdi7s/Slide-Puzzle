@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="20dp"
+    android:paddingBottom="25dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".StoreActivity">
+
+    <ImageView
+        android:layout_weight="1"
+        android:src="@drawable/store_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="3pt"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/token_image"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"/>
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/txtTokensCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_weight="1"
+        android:id="@+id/btnLives0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_store_0"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="3pt"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+        android:layout_weight="1"
+        android:id="@+id/btnLives1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_store_15"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="3pt"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+        android:layout_weight="1"
+        android:id="@+id/btnLives2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_store_35"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="3pt"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+        android:layout_weight="1"
+        android:id="@+id/btnLives3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_store_85"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="3pt"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+        android:layout_weight="1"
+        android:id="@+id/btnLives4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_store_7500"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="3pt"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".IntentSelection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_blue">
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_graphics_right"
+            android:adjustViewBounds="true"
+            android:scaleType="fitEnd"/>
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_graphics_left"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/logo_height"
+                android:layout_height="@dimen/logo_height"
+                android:src="@drawable/logo"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:id="@+id/button_createPuzzle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/menu_button_height"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_btn_create" />
+
+            <ImageButton
+                android:id="@+id/button_solve"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/menu_button_height"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_btn_solve" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.chocolate.puzzlefriends.StoreButtonView
+        android:layout_width="106dp"
+        android:layout_height="49dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_store"
+        android:visibility="gone"/>
+
+</RelativeLayout>
